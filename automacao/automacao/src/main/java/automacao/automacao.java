@@ -47,6 +47,9 @@ public class automacao {
 		String second_link = findPlanos.get(0).getAttribute("href");
 		driver.navigate().to(second_link);
         
+		List<WebElement> findSobre = driver.findElements(By.linkText("Sobre"));
+		String third_link = findSobre.get(0).getAttribute("href");
+		driver.navigate().to(third_link);
         
       
 //        WebDriverWait(driver, 20).until(EC.element_to_be_clickable((
