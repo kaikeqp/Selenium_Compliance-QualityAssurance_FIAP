@@ -55,6 +55,6 @@ public class automacao {
 //        WebDriverWait(driver, 20).until(EC.element_to_be_clickable((
 //        
 		// If you want to Close the browser, uncomment this line
-		// driver.quit();
+		driver.quit();
     }
 }
