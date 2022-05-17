@@ -23,21 +23,12 @@ public class automacao {
 
         // Opening Bing
         driver.get("http://www.bing.com.br");
-
-        // q its the search box name/ID
         WebElement element = driver.findElement(By.name("q"));
-
         element.sendKeys("plataforma esa");
-        
-        // Submit the form
         element.submit();
 
-        // Printing the page title - just for example
         System.out.println("Page title is: " + driver.getTitle());
         
-
-       
-       // List<WebElement> findElements = driver.findElements(By.xpath("//*[@id=\"gsr\"]"));
 
 		List<WebElement> findEsa = driver.findElements(By.linkText("Plataforma ESA: Gestão do Conhecimento"));
 		String first_link = findEsa.get(0).getAttribute("href");
@@ -51,10 +42,6 @@ public class automacao {
 		String third_link = findSobre.get(0).getAttribute("href");
 		driver.navigate().to(third_link);
         
-      
-//        WebDriverWait(driver, 20).until(EC.element_to_be_clickable((
-//        
-		// If you want to Close the browser, uncomment this line
 		driver.quit();
     }
 }
