@@ -39,11 +39,9 @@ public class automacao {
        
        // List<WebElement> findElements = driver.findElements(By.xpath("//*[@id=\"gsr\"]"));
 
-       List<WebElement> findElements = driver.findElements(By.xpath("//*[@id='rso']//h3/a"));
-
-        //Get the url of first link and navigate to it
-        String fisrt_link = findElements.get(0).getAttribute("href");
-        driver.navigate().to(fisrt_link);
+		List<WebElement> findEsa = driver.findElements(By.linkText("Plataforma ESA: Gestão do Conhecimento"));
+		String first_link = findEsa.get(0).getAttribute("href");
+		driver.navigate().to(first_link);
        
         
         
