@@ -27,7 +27,7 @@ public class automacao {
         // q its the search box name/ID
         WebElement element = driver.findElement(By.name("q"));
 
-        element.sendKeys("Fiap");
+        element.sendKeys("plataforma esa");
         
         // Submit the form
         element.submit();
