@@ -21,8 +21,8 @@ public class automacao {
 		
 		WebDriver driver = new ChromeDriver();
 
-        // Opening Google
-        driver.get("http://www.google.com.br");
+        // Opening Bing
+        driver.get("http://www.bing.com.br");
 
         // q its the search box name/ID
         WebElement element = driver.findElement(By.name("q"));
