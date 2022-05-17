@@ -43,6 +43,9 @@ public class automacao {
 		String first_link = findEsa.get(0).getAttribute("href");
 		driver.navigate().to(first_link);
        
+		List<WebElement> findPlanos = driver.findElements(By.linkText("Conheça nossos planos"));
+		String second_link = findPlanos.get(0).getAttribute("href");
+		driver.navigate().to(second_link);
         
         
       
