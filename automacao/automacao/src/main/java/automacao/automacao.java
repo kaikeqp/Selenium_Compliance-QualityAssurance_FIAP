@@ -16,8 +16,8 @@ public class automacao {
 	public static void main(String[] args) {
 		
 		
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\xps13\\Documents\\Automacao\\chromedriver_win32\\chromedriver.exe");
-		
+	System.setProperty("webdriver.chrome.driver", "src\\main\\java\\automacao\\chromedriver.exe");
+
 		
 		WebDriver driver = new ChromeDriver();
 
