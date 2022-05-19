@@ -41,6 +41,10 @@ public class automacao {
 		List<WebElement> findSobre = driver.findElements(By.linkText("Sobre"));
 		String third_link = findSobre.get(0).getAttribute("href");
 		driver.navigate().to(third_link);
+		
+		List<WebElement> findDezPadronize = driver.findElements(By.linkText("DEZPADRONIZE"));
+		String fourth_link = findDezPadronize.get(0).getAttribute("href");
+		driver.navigate().to(fourth_link);
         
 		driver.quit();
     }
